@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    
+<div class="container">
+<div class="head">
+<button onclick="turn(this.id)" id="sun" title="Light Mood">&#9728;</button>
+<button onclick="turn(this.id)" id="moon" title="Dark Mood">&#9899;</button>
+    <h4>CRUDS PROJECT </h4>
+</div>
+
+<div class="input">
+
+    <input type="text" id="id" placeholder="title" class="hh">
+    <div class="price">
+
+    <input oninput="getPrice()" type="number" id="id1" placeholder="price" min="0"class="hh" >
+    <input oninput="getPrice()" type="number" id="id2" placeholder="taxes" min="0"class="hh" >
+    <input oninput="getPrice()" type="number" id="id3" placeholder="ads" min=0 class="hh">
+    <input oninput="getPrice()"  type="number" id="id4" placeholder="discount" min="0"class="hh" >
+    <span id ="total"></span>
+</div>
+
+    <input type="number" placeholder="count" id="count" min="0"class="hh" >
+    <input type="text" placeholder="category" id="category"class="hh" >
+    <button id="creat">create</button>
+    <input onkeyup="searchData(this.value)" type="text" placeholder="search" id ="search" class="hh">
+
+<div id="deletall">
+
+</div>
+    
+    <div class="ser">
+
+    <button onclick="searchMood(this.id)"id="searchone"> search by title</button>
+    <button onclick="searchMood(this.id)"id="searchtwo"> search by category</button>
+</div>
+
+
+</div>
+
+
+<div class="out">
+<table id="table">
+    <tr>
+<th id="one">id</th>
+<th id="two">title</th>
+<th>price</th>
+<th>taxes</th>
+<th>ads</th>
+<th>discount</th>
+<th>total</th>
+<th>category</th>
+<th>update</th>
+<th>delete</th>
+    </tr>
+    <tbody id="tbody">
+      
+
+    </tbody>
+</table>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+<script src="js/index.js"></script>
+
+</body>
+</html>
